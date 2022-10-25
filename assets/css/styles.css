@@ -35,7 +35,7 @@ body {
   display: none !important;
 }
 
-#img-menu-open, #img-menu-close, .btn-cta {
+#img-menu-open, #img-menu-close, .btn-cta, .item-new-article > h4, .item-top-article > div > h4 {
   cursor: pointer;
 }
 
@@ -82,8 +82,12 @@ nav {
   margin-bottom: 1rem;
 }
 
+.list-menu > li > a:hover {
+  color: hsl(35, 77%, 62%);
+}
+
 main {
-  padding: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 h2 {
@@ -96,6 +100,11 @@ h2 {
   line-height: 1.5rem;
 }
 
+#img-hero {
+  display: block;
+  margin-bottom: 1rem;
+}
+
 .btn-cta {
   padding: .75rem 1.5rem;
   font-size: 14px;
@@ -104,6 +113,10 @@ h2 {
   color: white;
   letter-spacing: .25rem;
   background-color: hsl(5, 85%, 63%);
+}
+
+.btn-cta:hover {
+  background-color: hsl(0, 0%, 0%);
 }
 
 .div-new-articles {
@@ -152,6 +165,10 @@ h2 {
   margin-bottom: .75rem;
 }
 
+.item-new-article > h4:hover {
+  color: hsl(35, 77%, 62%);
+}
+
 .item-new-article > div {
   line-height: 1.75rem;
 }
@@ -183,6 +200,10 @@ h2 {
   font-family: 'Inter-ExtraBold';
   font-size: 1.25rem;
   margin-bottom: .75rem;
+}
+
+.item-top-article > div > h4:hover {
+  color: hsl(5, 85%, 63%);
 }
 
 .item-top-article > div > div {
