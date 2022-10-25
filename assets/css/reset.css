@@ -3,9 +3,11 @@ html, body, div, span, h1, h2, h3, h4, h5, p, a, img, header, main, footer, nav,
   padding: 0;
   border: 0;
   font: inherit;
+  color: inherit;
   box-sizing: border-box;
   text-transform: none;
   background: none;
+  text-decoration: none;
 }
 
 img {
