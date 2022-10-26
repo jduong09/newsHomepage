@@ -17,4 +17,30 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.classList.add('hide');
     bgOverlay.classList.add('hide');
   });
+
+  if (innerWidth >= 767) {
+    iconMenuOpen.classList.add('hide');
+    iconMenuClose.classList.add('hide');
+    nav.classList.remove('hide');
+    bgOverlay.classList.add('hide');
+  } else {
+    iconMenuOpen.classList.remove('hide');
+    iconMenuClose.classList.add('hide');
+    nav.classList.add('hide');
+    bgOverlay.classList.add('hide');
+  }
+
+  window.addEventListener('resize', () => {
+    if (innerWidth >= 767) {
+      iconMenuOpen.classList.add('hide');
+      iconMenuClose.classList.add('hide');
+      nav.classList.remove('hide');
+      bgOverlay.classList.add('hide');
+    } else {
+      iconMenuOpen.classList.remove('hide');
+      iconMenuClose.classList.add('hide');
+      nav.classList.add('hide');
+      bgOverlay.classList.add('hide');
+    }
+  })
 });
